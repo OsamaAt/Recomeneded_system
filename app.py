@@ -4,8 +4,8 @@ from surprise import SVD, Dataset, Reader
 from surprise.model_selection import train_test_split
 
 # تحميل البيانات
-ratings = pd.read_csv("C:\\Users\\Asus\\Downloads\\ml-100k\\ml-100k\\u.data", sep='\t', names=['user_id', 'item_id', 'rating', 'timestamp'])
-movies = pd.read_csv("C:\\Users\\Asus\\Downloads\\ml-100k\\ml-100k\\u.item", sep='|', encoding='latin-1', usecols=[0, 1], names=['item_id', 'title'])
+ratings = pd.read_csv("data/u.data", sep='\t', names=['user_id', 'item_id', 'rating', 'timestamp']) #Enter The Path
+movies = pd.read_csv("data/u.data", sep='|', encoding='latin-1', usecols=[0, 1], names=['item_id', 'title']) #Enter The Path
 
 # تجهيز Surprise
 reader = Reader(rating_scale=(1, 5))
