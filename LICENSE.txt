@@ -1,0 +1,6 @@
+
+## البيانات:
+تم استخدام بيانات [MovieLens 100K](https://grouplens.org/datasets/movielens/100k/)
+
+## الترخيص:
+MIT License
