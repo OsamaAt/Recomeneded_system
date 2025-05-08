@@ -1,10 +1,10 @@
 import pandas as pd 
 
 # Reading Rating Data
-ratings = pd.read_csv("C:\\Users\\Asus\\Downloads\\ml-100k\\ml-100k\\u.data", sep='\t', names=['user_id', 'item_id', 'rating', 'timestamp'])
+ratings = pd.read_csv("data/u.data", sep='\t', names=['user_id', 'item_id', 'rating', 'timestamp']) #Enter The Path 
 
 # Reading Movies Info
-movies=pd.read_csv("C:\\Users\\Asus\\Downloads\\ml-100k\\ml-100k\\u.item",sep='|' , encoding='latin_1',usecols=[0,1] , names=['item_id','title'])
+movies=pd.read_csv("data/u.data",sep='|' , encoding='latin_1',usecols=[0,1] , names=['item_id','title']) #Enter The Path
 
 #Merging Them Together
 data=pd.merge(ratings , movies , on='item_id')
