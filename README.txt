@@ -41,8 +41,7 @@ pd.read_csv("data/u.data")
 
 ---
 
-## ✅ كيفية التشغيل (عربي)
-
+## ✅ كيفية التشغيل 
 1. **ثبّت المكتبات المطلوبة**:
 ```bash
 pip install -r requirements.txt
