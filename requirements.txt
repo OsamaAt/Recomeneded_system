@@ -1,6 +1,4 @@
 pandas
-numpy
-scikit-surprise
 scikit-learn
 streamlit
-surprise
+
